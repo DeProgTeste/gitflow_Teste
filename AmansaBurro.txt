@@ -1,4 +1,5 @@
-﻿-------------------------------------------------------
+﻿
+-------------------------------------------------------
 Instalação de componentes Delphi
 Tools > Options >> Delphi Options > Library >> Library path
 C:\Projetos\Facta Desktop\Componentes\barcode-xe;C:\Projetos\Facta Desktop\Componentes\AcroPDFLib_TLB;C:\Projetos\Facta Desktop\Componentes\dbvalcb-XE;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Addons;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Collection;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next DBGrid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Grid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Inspector;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Sheet;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next TBX;C:\Projetos\Facta Desktop\Componentes\dcef3-master\src;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win32;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win64
