@@ -1,0 +1,85 @@
+﻿-------------------------------------------------------
+Instalação de componentes Delphi
+Tools > Options >> Delphi Options > Library >> Library path
+C:\Projetos\Facta Desktop\Componentes\barcode-xe;C:\Projetos\Facta Desktop\Componentes\AcroPDFLib_TLB;C:\Projetos\Facta Desktop\Componentes\dbvalcb-XE;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Addons;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Collection;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next DBGrid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Grid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Inspector;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Sheet;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next TBX;C:\Projetos\Facta Desktop\Componentes\dcef3-master\src;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win32;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win64
+-------------------------------------------------------
+EM ANALISE ou EM TESTE
+Iniciar Nova Atividade:
+- No Portal Solicitações > Meus Atendimentos
+- Na tela de chamado
+	- Alterar o Responsável da atividade, se necessário
+	- Alterar o Status para 'Em Desenvolvimento'
+	- Marcar 'Acompanhamento Interno'
+	- Gravar
+- No Git:
+	- ir para a linha da VersaoProducao(Computadorzinho)
+	- Verificar se tem um V
+	- Dar Pull para atualizar a VersaoProducao da máquina
+	- Selecionar sobre a VersaoProducao com o botão direito "Create Branch Here"
+	- Nome da versão será o número da atividade
+-------------------------------------------------------
+Liberar Atividade:
+- No Git sobre a Branch da atividade
+	- View Changes
+	- Procurar arquivos com lapis ao lado
+	- Arquivos .dfm se teve alteração dar StageFile
+	- No campo Summary colocar o # chamado
+	- Commit changes to X files
+	- Discart all changes(Lixerinha)
+		- Reset All
+- No Delphi reabrir o projeto
+	- Build All Projects
+- Verificar se o programa 'gerarexecutavelteste' está aberto na barra do relógio, se não estiver, o atalho está na área de trabalho
+- No 'gerarexecutavelteste'
+	-Botão direito sobre o programa e 'Gerar executável de Teste' 
+	- colocar o # chamado que o programa automaticamente gerará o executável para teste no local correto...
+- Na tela de chamado
+	- Alterar responsável para 'Francielle...'
+	- Alterar Status para 'EM TESTE'
+	- Marcar Acompanhamento Interno
+	- Preencher Comentário com breve descrição de funcionamento
+-------------------------------------------------------
+Após retornar do teste(se aprovado):
+- No Git
+	- Atualizar a VersaoProducao(Pull)
+	- Limpar sujeiras(Discart all changes)
+	* Atualizar a branch da tarefa com a VersaoProducao
+	- Sobre a branch que quer incluir na VersaoProducao clicar com o botão direito e selecionar "Merge VersaoProducao into xxxxx"
+	- Fazer Push da VersaoProducao
+- Na tela de chamado
+	- Passar a atividade para o status "Aguardando Atualização", se não estiver
+-------------------------------------------------------
+Gerando a Versão de Produção:
+- No Git
+	- Atualizar a VersaoProducao(Pull)
+- No Projeto SistemaFacta(Delphi)
+	- Abrir a Unit_Senha e editar dataSistema para a data atual
+- No Git
+	- Salvar alteração pondo na Descricao data e versão gerada (dd/mm/aaaa v1)
+	- Subir a alteração(push)
+- MASTER Release	
+	- trocar para branch Master, atualizar ela conforme a VersaoProducao(Merge)
+	- Build no projeto Release	
+
+- No Windows Explorer
+	- Copiar o exe do projeto para a pasta upx (C:\sistema\upx-3.95-win64)
+	- Arrastar o projeto para cima do upx("Compactador")
+	- Abre o projeto e na tela de Analise testa um cpf para verificar se não está exibindo algum erro felipe/fbb753951
+		- Verificar se mensagem de carregando está com acentuacao
+		- Utilizar o CPF do Felipe, pois tem todas as cores 00890408050
+		- Inserir ocorrência 28 e gravar
+	- Volta com a versão compactada para a pasta C:\sistema
+	- Executa o programa Atualiza na pasta sistema e se necessário muda os valores dos campos
+- Na area de trabalho abrir o sistemaHorus e ver se gerará o arquivo OLD-SistemaHoros, está ok se não gerar, deu problema no fechamento
+
+-------------------------------------------------------
+
+[Window Title]
+Information
+
+[Content]
+Delphi XE3 has detected 2 running instances of the 2 allowed by your license. Please shut down the instances on the following systems.
+alcesio.z - FPC-3027 - 192.168.8.37
+denisson.camargos - FPC-1608 - 192.168.8.114
+
+[OK]
