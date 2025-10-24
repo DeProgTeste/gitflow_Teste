@@ -1,10 +1,9 @@
-﻿
--------------------------------------------------------
-Instalação de componentes Delphi
+﻿-------------------------------------------------------
+1 - Instalação de componentes Delphi
 Tools > Options >> Delphi Options > Library >> Library path
 C:\Projetos\Facta Desktop\Componentes\barcode-xe;C:\Projetos\Facta Desktop\Componentes\AcroPDFLib_TLB;C:\Projetos\Facta Desktop\Componentes\dbvalcb-XE;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Addons;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Collection;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next DBGrid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Grid;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Inspector;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next Sheet;C:\Projetos\Facta Desktop\Componentes\nextcomps5_115 D6 - XE8\Sources\Next TBX;C:\Projetos\Facta Desktop\Componentes\dcef3-master\src;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win32;C:\Projetos\Facta Desktop\Componentes\dcef3-master\bin\Win64
 -------------------------------------------------------
-EM ANALISE ou EM TESTE
+2 - EM ANALISE ou EM TESTE
 Iniciar Nova Atividade:
 - No Portal Solicitações > Meus Atendimentos
 - Na tela de chamado
@@ -19,7 +18,7 @@ Iniciar Nova Atividade:
 	- Selecionar sobre a VersaoProducao com o botão direito "Create Branch Here"
 	- Nome da versão será o número da atividade
 -------------------------------------------------------
-Liberar Atividade:
+3 - Liberar Atividade:
 - No Git sobre a Branch da atividade
 	- View Changes
 	- Procurar arquivos com lapis ao lado
@@ -40,7 +39,7 @@ Liberar Atividade:
 	- Marcar Acompanhamento Interno
 	- Preencher Comentário com breve descrição de funcionamento
 -------------------------------------------------------
-Após retornar do teste(se aprovado):
+4 - Após retornar do teste(se aprovado):
 - No Git
 	- Atualizar a VersaoProducao(Pull)
 	- Limpar sujeiras(Discart all changes)
@@ -50,7 +49,7 @@ Após retornar do teste(se aprovado):
 - Na tela de chamado
 	- Passar a atividade para o status "Aguardando Atualização", se não estiver
 -------------------------------------------------------
-Gerando a Versão de Produção:
+5 - Gerando a Versão de Produção:
 - No Git
 	- Atualizar a VersaoProducao(Pull)
 - No Projeto SistemaFacta(Delphi)
